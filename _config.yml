@@ -1,0 +1,18 @@
+title: "Mathematician & Computer Scientist"
+description: "Research at the intersection of formal methods, logic, and AI"
+url: "https://stefan-nugraha.github.io"
+baseurl: ""
+
+# Use GitHub's built-in theme as base
+theme: jekyll-theme-minimal
+
+# Author information (used by the sidebar)
+author:
+  name: "Stefan Nugraha"
+  bio: "Associate Scientist, Institute of Computer Science, Czech Academy of Sciences"
+  location: "Prague, Czech Republic"
+  email: "nugraha@cs.cas.cz"
+  avatar: "/assets/images/profile.jpg"
+  mathgenealogy: "https://www.mathgenealogy.org/id.php?id=250372"
+  github: "https://github.com/stefan-nugraha"
+  orcid: "https://orcid.org/0000-0002-7139-4487"

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23e5e5e5'/%3E%3Ctext x='50' y='72' font-size='75' font-weight='bold' text-anchor='middle' fill='%23bc6c25'%3E⊢%3C/text%3E%3C/svg%3E">
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #2d3e50;
+    background-color: #fef9e8;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* Header */
+  header {
+    background: white;
+    border-bottom: 1px solid rgba(188, 108, 37, 0.2);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #006d77;
+    margin-bottom: 0.5rem;
+  }
+
+  .site-description {
+    font-size: 1.1rem;
+    color: #5a6e7c;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Gradient rule under title */
+  .signature-rule {
+    height: 3px;
+    width: 80px;
+    background: linear-gradient(90deg, #006d77, #bc6c25);
+    margin: 0.5rem 0 1.5rem 0;
+    border: none;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin-right: 1.8rem;
+    text-decoration: none;
+    color: #006d77;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  nav a:hover {
+    color: #bc6c25;
+    text-decoration: underline;
+  }
+
+  /* Main layout: two columns */
+  .main-content {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    flex: 0 0 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 109, 119, 0.15);
+    position: sticky;
+    top: 2rem;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: block;
+    border: 3px solid rgba(0, 109, 119, 0.2);
+    object-fit: cover;
+    object-position: 30% 50%;
+  }
+
+  .sidebar h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    color: #006d77;
+  }
+
+  .sidebar p {
+    font-size: 0.9rem;
+    color: #5a6e7c;
+    margin-bottom: 0.8rem;
+  }
+
+  .sidebar .title {
+    font-weight: 600;
+    color: #2d3e50;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar .links {
+    margin-top: 1.2rem;
+  }
+
+  .sidebar .links a {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    color: #006d77;
+  }
+
+  .sidebar .links a:hover {
+    color: #bc6c25;
+  }
+
+  /* Article content */
+  article {
+    flex: 1;
+    min-width: 0;
+  }
+
+  article h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(188, 108, 37, 0.3);
+    color: #bc6c25;
+  }
+
+  article h2:first-of-type {
+    margin-top: 0;
+  }
+
+  article h3 {
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0.8rem;
+    color: #006d77;
+  }
+
+  .publication {
+    margin-bottom: 1.2rem;
+  }
+
+  .publication-title {
+    font-weight: 600;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(188, 108, 37, 0.2);
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8a9aab;
+  }
+
+  a {
+    color: #006d77;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: #bc6c25;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 800px) {
+    .main-content {
+      flex-direction: column;
+    }
+    .sidebar {
+      flex: auto;
+      width: 100%;
+      position: static;
+    }
+    .profile-img {
+      max-width: 150px;
+    }
+    .container {
+      padding: 1rem;
+    }
+    .header-content {
+      padding: 0 1rem;
+    }
+  }
+
+  /* Article paragraph spacing */
+  article p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+
+  /* For the bio section specifically */
+  .bio p {
+    margin-bottom: 1.2rem;
+  }
+
+  /* Optional hover effect for publications */
+  .publication {
+    transition: border-left 0.2s ease;
+    padding-left: 0.75rem;
+    border-left: 2px solid transparent;
+  }
+
+  .publication:hover {
+    border-left-color: #bc6c25;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>{{ site.title }}</h1>
+      <hr class="signature-rule">
+      <div class="site-description">{{ site.description }}</div>
+      <nav>
+        <a href="{{ '/' | relative_url }}">About</a>
+        <a href="{{ '/' | relative_url }}#publications">Publications</a>
+        <a href="{{ '/' | relative_url }}#theses">Theses</a>
+        <a href="{{ '/' | relative_url }}#cv">CV</a>
+        <a href="https://www.mathgenealogy.org/id.php?id=250372" target="_blank">MathGenealogy</a>
+        <a href="https://github.com/stefan-nugraha" target="_blank">GitHub</a>
+        <a href="https://orcid.org/0000-0002-7139-4487" target="_blank">ORCID</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <aside class="sidebar">
+        {% if site.author.avatar %}
+          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="profile-img">
+        {% endif %}
+        <h2>{{ site.author.name }}</h2>
+        <p style="margin: -0.5rem 0 0.5rem 0;"><small><em>(Anggha Nugraha in official records)</em></small></p>
+        <p class="title">{{ site.author.bio }}</p>
+        <p>📍 {{ site.author.location }}</p>
+        <p style="font-size: 0.85rem; color: #bc6c25; font-style: italic; margin-top: 0.8rem;">
+          🌏 From the tropics to the Vltava — logic connects it all.
+        </p>
+        <p style="font-size: 0.85rem; color: #5a6e7c; margin-top: 0.5rem;">
+          ⚡ Definitely not the smartest in the room — just inquisitive about stuff, especially logic and mathematics.
+        <p>📧 <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+        <div class="links">
+          {% if site.author.mathgenealogy %}
+            <a href="{{ site.author.mathgenealogy }}" target="_blank">MathGenealogy</a>
+          {% endif %}
+          {% if site.author.github %}
+            <a href="{{ site.author.github }}" target="_blank">GitHub</a>
+          {% endif %}
+         {% if site.author.orcid %}
+            <a href="{{ site.author.orcid }}" target="_blank">ORCID</a>
+          {% endif %}
+        </div>
+      </aside>
+
+      <article>
+        {{ content }}
+      </article>
+    </div>
+  </div>
+
+  <footer>
+    <p>© {{ site.time | date: '%Y' }} Stefan Nugraha — Institute of Computer Science, Czech Academy of Sciences</p>
+  </footer>
+</body>
+</html>
