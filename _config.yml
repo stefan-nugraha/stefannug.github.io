@@ -9,7 +9,7 @@ theme: jekyll-theme-minimal
 # Author information (used by the sidebar)
 author:
   name: "Stefan Nugraha"
-  bio: "Associate Scientist, Institute of Computer Science, Czech Academy of Sciences"
+  bio: "Associate Scientist, Institute of Computer Science, CAS"
   location: "Prague, Czech Republic"
   email: "nugraha@cs.cas.cz"
   avatar: "/assets/images/profile.jpg"
