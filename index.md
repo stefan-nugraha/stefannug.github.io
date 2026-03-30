@@ -8,7 +8,7 @@ title: "About Me"
 
 <p>I did my PhD in Mathematics at the University of Canterbury (New Zealand), where I worked on non-classical logic and infinitesimal analysis. I also have an MSc in Computer Science from the University of Indonesia, where I fell in love with formal verification (Hoare logic, specifically).</p>
 
-<p>Currently, I'm an Associate Scientist at the Institute of Computer Science, Czech Academy of Sciences, and I'm pursuing a second PhD at ČVUT with doc. Dr. Stefan Ratschan, digging into automated reasoning and SMT solvers.</p>
+<p>Currently, I'm an **Associate Scientist** at the Institute of Computer Science, Czech Academy of Sciences, and I'm pursuing a second PhD at ČVUT with doc. Dr. Stefan Ratschan, digging into automated reasoning and SMT solvers.</p>
 
 <p><em>I grew up in Indonesia, where I first got hooked on the elegance of mathematics. These days, I split my time between Prague and wherever my curiosity takes me: whether that's chasing new research ideas or simply making new connections.</em></p>
 </div>
