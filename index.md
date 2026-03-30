@@ -1,6 +1,12 @@
+<!--
 ---
 layout: default
 title: "About Me"
+---
+-->
+---
+layout: default
+title: Mathematician & Computer Scientist
 ---
 
 <div class="bio">
@@ -41,3 +47,6 @@ title: "About Me"
 - **PhD**: *Naive Infinitesimal Analysis* — University of Canterbury, 2019  
 - **MSc**: *Verification of Square Matrix Multiplication Algorithm using Hoare Logic* — University of Indonesia, 2012
 
+---
+
+*Last updated: March 2026* | [GitHub](https://github.com/stefannug) | [Google Scholar](https://scholar.google.com/citations?user=dI37-fUAAAAJ&hl=en)
