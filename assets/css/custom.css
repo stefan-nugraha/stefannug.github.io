@@ -1,0 +1,147 @@
+:root {
+  --bg: #fafaf9;
+  --text: #1e293b;
+  --accent: #3b82f6;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 1.8rem 0 1rem 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--border);
+  color: #0f172a;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.2rem 0 0.5rem 0;
+  color: #334155;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2563eb;
+}
+
+ul, ol {
+  margin: 0.8rem 0 1rem 1.8rem;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+/* Profile image styling */
+img[src*="me.jpg"], img[src*="profile.jpg"] {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Publication entries */
+.publication {
+  margin: 1.2rem 0;
+  padding: 0.8rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border-left: 3px solid var(--accent);
+}
+
+.publication strong {
+  color: #0f172a;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+}
+
+footer a {
+  color: #64748b;
+}
+
+/* Code styling for any technical content */
+code {
+  background: #f1f5f9;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-family: 'SF Mono', Monaco, monospace;
+}
+
+/* Responsive image handling */
+@media (max-width: 640px) {
+  img[src*="me.jpg"], img[src*="profile.jpg"] {
+    width: 100px;
+    height: 100px;
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+}
