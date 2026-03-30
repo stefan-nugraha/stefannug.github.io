@@ -36,7 +36,7 @@ title: "About Me"
 
 - A. S. Nugraha and T. Basaruddin. [*Analysis and Comparison of QR Decomposition Algorithms for Some Types of Matrix*](https://ieeexplore.ieee.org/document/6354470). Proceedings of Federated Conference on Computer Science and Information System, 2012, pages 561-565.
 
-## Theses
+### Theses
 
 - **PhD**: *Naive Infinitesimal Analysis* — University of Canterbury, 2019  
 - **MSc**: *Verification of Square Matrix Multiplication Algorithm using Hoare Logic* — University of Indonesia, 2012
