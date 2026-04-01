@@ -148,13 +148,18 @@ nav a:hover {
 
   .profile-img {
     width: 100%;
-    max-width: 180px;
+    max-width: 140px;
     border-radius: 50%;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1.2rem;
     display: block;
     border: 3px solid var(--border-light);
     object-fit: cover;
     object-position: 30% 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.02);
 }
 
   .sidebar h2 {
