@@ -1,3 +1,3 @@
 ## Hi there 👋
 
-Personal academic website. Visit [stefan-nugraha.github.io](https://stefannug.github.io).
+Personal academic website. Visit [stefannug.github.io](https://stefannug.github.io).
